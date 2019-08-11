@@ -44,6 +44,7 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
     context.data = {
       text,
       // Set the user id
+      // ! important note: Add the field 'userId' as a property on the /model/messages-model.js
       userId: user._id,
       // Add the current date
       createdAt: new Date().getTime()
